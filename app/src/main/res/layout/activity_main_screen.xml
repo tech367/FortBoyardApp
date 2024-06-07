@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_fort"
+    tools:context=".MainScreenActivity">
+
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17sp"
+        android:onClick="logOutUser"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/name_plate"
+        android:text="Artem" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="836dp"
+        android:layout_below="@+id/textViewSettings"
+        android:background="@drawable/custom_layout"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rectangle_1">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/fort_vect" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView17"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Организуем незабываемый \n праздник под ключ!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_get_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView47"
+                android:layout_alignStart="@+id/imageView17"
+                android:layout_alignEnd="@+id/imageView17"
+                android:layout_marginStart="-0dp"
+                android:layout_marginTop="87dp"
+                android:layout_marginEnd="-0dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Забронировать!"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

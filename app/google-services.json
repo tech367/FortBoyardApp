@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227121373003",
+    "project_id": "fortboyard-54356",
+    "storage_bucket": "fortboyard-54356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227121373003:android:ca0b69f23499793b3392ce",
+        "android_client_info": {
+          "package_name": "com.example.fortboyard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFuEzuuOFeC02GjB9d8QFAXwVfwLM9amA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

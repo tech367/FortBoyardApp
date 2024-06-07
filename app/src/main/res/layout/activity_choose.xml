@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1F22"
+    tools:context=".ChooseAgeActivity">
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Продолжить"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonNext"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_card"
+        android:backgroundTint="#2B2D30">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="2dp"
+            app:srcCompat="@drawable/warning_poly" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingHorizontal="10dp"
+            android:text="От выбора возраста может зависеть сценарий квеста, количество испытаний, а также их сложность."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="407dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_card"
+        android:backgroundTint="#2B2D30">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="На какой возраст планируется праздник?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+        <ScrollView
+            android:layout_width="392dp"
+            android:layout_height="349dp"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_card"
+            android:backgroundTint="#2B2D30"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/baby_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#1E1F22"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="#1E1F22"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/baby" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="5-8 лет"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/old_baby_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#1E1F22"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="#1E1F22"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/old_baby" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="9-11 лет"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/teen_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#1E1F22"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/purple"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/teen" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="12-14 лет"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/old_teen_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#1E1F22"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="#1E1F22"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView121"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/old_teen" />
+
+                    <TextView
+                        android:id="@+id/textView145"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="15-17 лет"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/grown_up_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:checkable="true"
+                    android:clickable="true"
+                    app:cardBackgroundColor="#1E1F22"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="#1E1F22"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView75"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/grown_up" />
+
+                    <TextView
+                        android:id="@+id/textView125"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="18+ лет"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ChooseWhyActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Продолжить"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="546dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/custom_card"
+        android:backgroundTint="@color/light_grey">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="По какому поводу хотите устроить праздник?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/birthdayCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="@color/grey"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/grey"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewGift"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/wrapped_gift" />
+
+                    <TextView
+                        android:id="@+id/textViewBirthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="День рождения"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/classPartyCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="@color/grey"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/grey"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewParty"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="13dp"
+                        app:srcCompat="@drawable/party" />
+
+                    <TextView
+                        android:id="@+id/textViewClassParty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="Праздник класса"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/schoolOffCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="@color/grey"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/light_green"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/school_off" />
+
+                    <TextView
+                        android:id="@+id/textViewSchoolOff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="Выпускной"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/onlyGameCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="@color/grey"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/grey"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewcrazyFace"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="13dp"
+                        app:srcCompat="@drawable/crazy_face" />
+
+                    <TextView
+                        android:id="@+id/textViewOnlyGame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="Игра без повода"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/coPartyCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:backgroundTint="@color/grey"
+                    android:clickable="true"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/grey"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewCoParty"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:padding="13dp"
+                        app:srcCompat="@drawable/co_party" />
+
+                    <TextView
+                        android:id="@+id/textViewCoParty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="60dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="left"
+                        android:text="Корпоратив"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/custom_card"
+        android:backgroundTint="@color/light_grey">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/attention" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="0dp"
+            android:layout_centerVertical="true"
+            android:text="От выбора типа мероприятия может зависеть конечная стоимость, а также набор предоставляемых опций."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</RelativeLayout>

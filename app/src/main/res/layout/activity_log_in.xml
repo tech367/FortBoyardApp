@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logIn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD647"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/fort_vect" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView30"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/passwordLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView29"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:padding="7dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/passwordLogIn"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:onClick="logInTest"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailLogin"
+        android:layout_alignStart="@+id/emailLogin"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="-25dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="E-mail"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLogin"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Пароль"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_centerHorizontal="true"
+        android:text="Вход" />
+
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogIn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Создать аккаунт"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLogIn"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Забыли пароль?" />
+
+
+</RelativeLayout>

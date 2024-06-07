@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_wel"
+    tools:context=".GetNumberActivity">
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер телефона"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView40"
+        android:background="@drawable/custom_layout"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/phone_spot" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView16"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="17sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/white"
+            android:text="Укажите актуальный номер телефона" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView41"
+            android:layout_alignStart="@+id/textView41"
+            android:layout_alignEnd="@+id/textView41"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+
+            android:inputType="phone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNextGetNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_alignEnd="@+id/editTextPhone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/white"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"
+            android:text="Продолжить" />
+    </RelativeLayout>
+</RelativeLayout>

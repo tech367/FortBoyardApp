@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_grey">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Изменение данных"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewChangedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView36"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:text="Введите новый адрес электронной почты:"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextChangeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewChangedData"
+        android:layout_alignStart="@+id/textViewChangedData"
+        android:layout_alignEnd="@+id/textViewChangedData"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingVertical="5dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonChangeData"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/editTextChangeData"
+        android:layout_alignStart="@+id/editTextChangeData"
+        android:layout_alignEnd="@+id/editTextChangeData"
+        android:layout_marginVertical="20dp"
+        android:layout_marginStart="-0dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Подтвердить"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+</RelativeLayout>
